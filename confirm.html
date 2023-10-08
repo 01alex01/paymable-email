@@ -9,6 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+
         * {
             margin: 0;
             border: 0;
@@ -38,10 +39,10 @@
             align-items: center;
             justify-items: center;
             max-width: 40rem;
-            height: 54.9375rem;
+            height: auto;
             position: relative;
             margin: 0px auto;
-            gap: 3rem;
+            gap: 1.5rem;
 
         }
 
@@ -51,8 +52,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
+
         }
+
+
 
 
         header {
@@ -92,7 +95,6 @@
             flex-shrink: 0;
         }
 
-
         h1 {
             color: var(--grey-900, #013A40);
             font-family: Aeonik;
@@ -116,7 +118,6 @@
             list-style: none;
         }
 
-
         ul li img {
             width: 1.5rem;
             height: 1.5rem;
@@ -126,12 +127,16 @@
             display: flex;
             width: 35rem;
             flex-direction: column;
-            align-items: center;
-            gap: 3rem;
-            border-radius: 0.75rem;
-            border: 1px solid var(--black-300, #E7E8E7);
-            background: var(--black-100, #FBFCFB);
+            align-items: left;
+            gap: 1.5rem;
+            border-radius: 0.5rem;
+            background: var(--black-200, #F1F2F1);
             margin: 2%;
+            padding: 2%;
+            width: 33.9375rem;
+            max-height: auto;
+            flex-shrink: 0;
+            overflow: hidden;
         }
 
         .one-col img {
@@ -142,37 +147,42 @@
 
 
 
-        .button-holder {
-            margin-bottom: 2%;
-        }
+
 
         .btn {
-            display: flex;
-            height: 3.75rem;
-
-            padding: 1.125rem 9.5625rem 1.125rem 9.875rem;
-            justify-content: flex-end;
+            display: inline-flex;
+            height: 2.5rem;
+            padding: 0.625rem 1.125rem;
+            justify-content: center;
             align-items: center;
+            flex-shrink: 0;
             border-radius: 1.875rem;
             background: var(--grey-900, #013A40);
-
-
-
         }
 
         .btn a {
 
             color: #FFF;
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-family: SF Pro Display;
+            text-decoration: none;
+            /* Text md/Medium */
+            font-family: Aeonik;
             font-size: 1rem;
             font-style: normal;
-            font-weight: 700;
-            line-height: 160%;
-            /* 1.6rem */
-            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.5rem;
+            /* 150% */
         }
 
+        .two-col {
+            display: flex;
+            max-width: 34rem;
+            flex-direction: column;
+            justify-content: center;
+            text-align: justify;
+            margin-bottom: 5%;
+            text-align: left;
+
+        }
 
 
         /* typography------------------------------------------------ */
@@ -187,15 +197,14 @@
             letter-spacing: 0.0125rem;
         }
 
-        h3 {
-            color: var(--greyscale-800, #202B3C);
-            font-family: Outfit;
+        h6 {
+            color: #000;
+            font-family: Aeonik;
             font-size: 1rem;
             font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            letter-spacing: 0.0125rem;
-            margin-bottom: 4rem;
+            font-weight: 700;
+            line-height: normal;
+            padding: 2%;
         }
 
 
@@ -203,7 +212,8 @@
             color: #000;
 
             /* Body / Large / Regular */
-            font-family: Outfit;
+            font-family: Aeonik;
+            color: black;
             font-size: 1rem;
             font-style: normal;
             font-weight: 400;
@@ -211,41 +221,43 @@
             /* 1.5rem */
             letter-spacing: 0.0125rem;
 
-        }
-
-        .typography {
+            line-height: 1.5rem;
+            /* 150% */
             text-align: left;
-            align-self: flex-;
-
-
+            align-self: flex-start;
+            padding: 2%;
         }
 
-        /* typography------------------------------------------------ */
-        .fotter {
+
+
+
+        /* footer------------------------------------------------ */
+        /* footer------------------------------------------------ */
+        .footer {
             display: flex;
-            width: 34rem;
-            height: 16.9375rem;
-            padding: 1.5rem 2rem;
+            width: 37.8125rem;
+            height: 13.125rem;
+            padding: 1.5rem 2.5rem 1.5rem 3.5rem;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
             gap: 1.5rem;
-            position: absolute;
-            left: 2rem;
-            justify-items: center;
+            flex-shrink: 0;
 
         }
 
         .app-store {
-            margin-top: 4%;
-            display: inline-flex;
-            flex-direction: row;
+            display: flex;
 
+
+            justify-content: left;
+            align-items: center;
 
         }
 
+
         .app-store-img {
-            margin-right: 1%;
+            padding-right: 0px;
         }
 
         .make {
@@ -298,25 +310,40 @@
         </header>
         <div class="wrapper-2">
             <div class="one-col">
-                <img src="./asset/Frame 1321314369.png" alt="" srcset="">
-                <h1>Change your password</h1>
-                <div class="button-holder">
-                    <button class="btn"><a href="#" target="_blank">Change password</a></button>
-                </div>
+                <h1>
+                    Confirm your email address
+                </h1>
                 <div class="typography">
-                    <p> If you didn’t ask to change you password, you can ignore this email.</p><br>
-                    <p> Victoria Segun,<br>
-                        Paymable Support Team.</p><br>
+                    <p>Hi Victoria,</p>
+                    <p> Thank you for signing up with Paymable.<br>
+                    <p>Kindly click on the button below to confirm your email address.</p>
+                    <p>
+                        If you didn’t sign up to Paymable please ignore this email or send a message to
+                        paymableltd@gmail.com</p>
                 </div>
 
+                <div class="button-holder">
+                    <button class="btn"><a href="#">confirm email</a></button>
+                </div>
+                <p> Victoria Segun,<br>
+                    Paymable Support Team.</p>
+
+            </div>
+
+            <div class="two-col">
+                <h6>Need support?</h6>
+                <p>If you have any questions, comments, or suggestions, please feel free to contact us. We would be
+                    delighted to assist you.</p>
             </div>
 
 
 
-
-            <div class="line2"></div>
             <footer>
+
+
                 <h2>Paymable, the future of payment! Download our app for Google & Mac.</h2>
+
+
                 <div class="app-store">
                     <div class="img">
                         <a href=""><img class="app-store-img" src="./asset/google-play-badge.png" alt="playstore"
