@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymable</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+
+        }
+
+        html {
+            font-size: 62.2%;
+        }
+
+        body {
+            font-size: 18px;
+            font-family: 'Outfit', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+
+            background: var(--greyscale-50, #F8FAFC);
+            color: var(--greyscale-700, #384860);
+
+
+        }
+
+        .wrapper {
+            background: var(--greyscale-50, #F8FAFC);
+            align-items: center;
+            justify-items: center;
+            max-width: 40rem;
+            height: 54.9375rem;
+            position: relative;
+            margin: 0px auto;
+        }
+
+
+
+        header {
+            max-width: 40rem;
+            padding: 2rem 3.0625rem;
+            background-color: #fff;
+            align-items: center;
+            text-align: center;
+            border-bottom: 1px solid var(--black-300, #E7E8E7);
+            background: #FFF;
+        }
+
+        .header1 {
+            display: flex;
+            align-items: center;
+            padding: 2%;
+
+        }
+
+        .logo {
+            display: flex;
+            padding: 2%;
+            margin-right: auto;
+        }
+
+        .main-logo {
+            width: 1.9375rem;
+            height: 1.9375rem;
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        h1 {
+            color: var(--grey-900, #013A40);
+            font-family: Aeonik;
+            font-size: 2.625rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+
+        ul {
+            display: flex;
+            width: 7.5rem;
+            align-items: flex-start;
+            gap: 1.5rem;
+            flex-shrink: 0;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li .fa-brands {
+            display: flex;
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 0rem 0.00088rem 0.00031rem 0rem;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .one-col {
+            max-width: 36rem;
+            background-color: #fff;
+            margin: 0px auto;
+            padding: 2%;
+            z-index: 1;
+
+        }
+
+        .two-col {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .two-col h1 {
+            color: var(--greyscale-900, #121A26);
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Outfit;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%;
+            padding-bottom: 2%;
+            text-align: justify;
+        }
+
+        p {
+            color: var(--greyscale-700, #384860);
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.0125rem;
+            margin-bottom: 2%;
+
+        }
+
+
+
+        .button-holder {
+            margin-bottom: 2%;
+        }
+
+        .btn {
+            display: flex;
+            height: 4rem;
+            padding: 1.25rem 2.8125rem;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            border-radius: 1.875rem;
+            background: var(--grey-900, #013A40);
+
+        }
+
+        .btn a {
+
+            color: #FFF;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: SF Pro Display;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+            /* 1.6rem */
+            text-decoration: none;
+        }
+
+
+
+        /* typography------------------------------------------------ */
+        h2 {
+            color: var(--greyscale-800, #202B3C);
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+
+            letter-spacing: 0.0125rem;
+        }
+
+        h3 {
+            color: var(--greyscale-800, #202B3C);
+            font-family: Outfit;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            letter-spacing: 0.0125rem;
+            margin-bottom: 4rem;
+        }
+
+        .fotter {
+            display: flex;
+            max-width: 36rem;
+            height: 16.9375rem;
+            padding: 1.5rem 2rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.5rem;
+            position: absolute;
+            left: 2rem;
+            bottom: 3rem;
+
+        }
+
+        .app-store {
+            margin-top: 4%;
+            display: inline-flex;
+            flex-direction: row;
+
+
+        }
+
+        .app-store-img {
+            margin-right: 1%;
+        }
+
+        .make {
+            object-fit: fill;
+        }
+
+        @media (max-width:600px) {
+
+
+            .line2 {
+                margin-top: 10%;
+            }
+
+
+
+
+            .two-col h1 {
+                line-height: 100%;
+                word-spacing: 0px;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header1">
+                <div class="logo">
+                    <div class="main-logo"><a href="https://imgbb.com/"><img src="https://i.ibb.co/cC4wyBx/Frame-5.png"
+                                alt="Frame-5" border="0"></a><br /><a target='_blank'
+                            href='https://imgbb.com/'></a><br /></div>
+                    <h1>Paymable</h1>
+                </div>
+                <div id="callout">
+                    <ul id="social">
+                        <li><a href="https://imgbb.com/"><img src="https://i.ibb.co/LCr8zGG/Social-icon-Twitter.png"
+                                    alt="Social-icon-Twitter" border="0"></a>
+                        </li>
+                        <li><a href="#"><a href="https://imgbb.com/"><img
+                                        src="https://i.ibb.co/rMndk85/Social-icon-FB.png" alt="Social-icon-FB"
+                                        border="0"></a></i></a></li>
+                        <li><a href="#"><a href="https://imgbb.com/"><img src="https://i.ibb.co/cJbrS2j/Group.png"
+                                        alt="Group" border="0"></a></a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <div class="line"></div>
+
+        <div class="one-col">
+            <div class="two-col">
+                <h1>Confirm your email address</h1>
+                <p>Hi Victoria,</p>
+                <p>We sincerely appreciate you for choosing Paymable! As a token of our gratitude, we would like to
+                    extend an exclusive offer to you.</p>
+                <p>Simply invite a friend to join you on Paymable, and you both will receive a bonus as a thank you.
+                </p>
+                <p>Thanks<br>
+                    Paymable Team<br>
+                </p><br>
+                <div class="button-holder">
+                    <button class="btn"><a href="#" target="_blank">Invite a friend</a></button>
+                </div>
+            </div>
+            <div class="line2"></div>
+            <footer>
+                <h2>Paymable, the future of payment! Download our app for Google & Mac.</h2>
+                <div class="app-store">
+                    <div class="img">
+                        <a href=""><img class="app-store-img" src="./asset/playstore.png" alt="playstore" border="0"
+                                height="38px" max-width="6.6875rem"></a>
+
+                    </div>
+
+                    <div class="img">
+                        <a href="https://imgbb.com/"><img class="make" src="./asset/app-store.png" alt="app-store"
+                                border="0" height="36px" max-width="7.6875rem"></a>
+                    </div>
+
+                </div>
+                <h3 style="margin-top: 4%;">Questions or faq? Contact us at <a href="#">faq@paymableltd.com</a>.
+                    If you'd rather not
+                    receive this kind of email, Don’t want any more emails from Notable? <a href="#">Unsubscribe</a>.
+                </h3>
+
+                <p>© 2023 Paymable Limited</p>
+            </footer>
+        </div>
+
+    </div>
+
+
+    </div>
+</body>
+
+</html>
