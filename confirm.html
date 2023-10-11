@@ -22,6 +22,7 @@
         }
 
 
+
         body {
             font-size: 18px;
             font-family: 'Outfit', sans-serif;
@@ -43,7 +44,7 @@
             position: relative;
             margin: 0px auto;
             gap: 1.5rem;
-
+            overflow: hidden;
         }
 
         .wrapper-2 {
@@ -52,6 +53,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0px 3.3rem;
 
         }
 
@@ -97,7 +99,7 @@
         h1 {
             color: var(--grey-900, #013A40);
             font-family: Aeonik;
-            font-size: 2.625rem;
+            font-size: 2rem;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -235,32 +237,32 @@
 
         /* footer------------------------------------------------ */
         /* footer------------------------------------------------ */
-        .footer {
+        footer {
             display: flex;
             width: 37.8125rem;
             height: 13.125rem;
-            padding: 1.5rem 2.5rem 1.5rem 3.5rem;
+            padding: 1.5rem 2.5rem 1.5rem 4.5em;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
             gap: 1.5rem;
             flex-shrink: 0;
+
 
         }
 
         .app-store {
             display: flex;
-
-
             justify-content: left;
-            align-items: center;
+            align-items: left;
 
         }
 
 
         .app-store img {
-            margin-right: 2%;
+            margin-right: 10px;
+            margin-left: 0px;
             padding: 2%;
+            width: 100px;
         }
 
         .make {
@@ -342,21 +344,19 @@
 
 
             <footer>
-
-
                 <h2>Paymable, the future of payment! Download our app for Google & Mac.</h2>
 
 
                 <div class="app-store">
                     <div class="img">
-                        <a href=""><img class="app-store-img" src="./asset/google-play-badge.png" alt="playstore"
-                                border="0" height="36px" max-width="6.6875rem"></a>
+                        <a href="#"><img class="app-store-img" src="./asset/google-play-badge.png" alt="playstore"
+                                border="0"></a>
 
                     </div>
 
                     <div class="img">
                         <a href="https://imgbb.com/"><img class="make" src="./asset/app-store.png" alt="app-store"
-                                border="0" height="36px" max-width="6.6875rem"></a>
+                                border="0" </a>
                     </div>
 
                 </div>

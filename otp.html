@@ -17,17 +17,16 @@
 
         }
 
+
         html {
             font-size: 62.2%;
         }
-
 
         body {
             font-size: 18px;
             font-family: 'Outfit', sans-serif;
             max-width: 800px;
             margin: 0 auto;
-
             background: var(--greyscale-50, #F8FAFC);
             color: var(--greyscale-700, #384860);
 
@@ -67,18 +66,17 @@
             text-align: center;
             border-bottom: 1px solid var(--black-300, #E7E8E7);
             background: #FFF;
-
-        }
-
-        .header1 {
             display: flex;
             align-items: center;
-            padding: 2%;
+
         }
+
+
 
         .logo {
             display: flex;
-            padding: 2%;
+            padding: 0.625rem 0rem;
+            gap: 1rem;
             margin-right: auto;
             align-items: center;
         }
@@ -87,8 +85,12 @@
             width: 1.9375rem;
             height: 1.9375rem;
             flex-shrink: 0;
-            padding: 0px .7rem;
+        }
 
+        .main-logo img {
+            width: 1.9375rem;
+            height: 1.9375rem;
+            flex-shrink: 0;
         }
 
         .main-logo img {
@@ -100,7 +102,7 @@
         h1 {
             color: var(--grey-900, #013A40);
             font-family: Aeonik;
-            font-size: 2.625rem;
+            font-size: 1.625rem;
             font-style: normal;
             font-weight: 500;
             line-height: normal;
@@ -230,7 +232,7 @@
             display: flex;
             width: 37.8125rem;
             height: 13.125rem;
-            padding: 1.5rem 2.5rem 1.5rem 3.5rem;
+            padding: 1.5rem 2.5rem 1.5rem 4.5rem;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
@@ -256,10 +258,17 @@
 
         }
 
+        .app-store img {
+            margin-right: 10px;
+            padding: 2%;
+            width: 70px;
+            height: 20PX;
+        }
 
         .app-store img {
-            margin-right: 2%;
+            margin-right: 10px;
             padding: 2%;
+            width: 100px;
         }
 
         .make {
@@ -289,24 +298,23 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="header1">
-                <div class="logo">
-                    <div class="main-logo"><a href="#"><img src="./asset/Frame 5 (1).png"></a></div>
-                    <h1>Paymable</h1>
-                </div>
-                <div id="callout">
-                    <ul id="social">
-                        <li><a href="https://imgbb.com/"><img src="./asset/Social icon - Twitter.png"
-                                    alt="Social-icon-Twitter"></a> </li>
-                        <li><a href="https://imgbb.com/"><img src="./asset/Social icon - FB.png"
-                                    alt="Social-icon-Twitter"></a> </li>
-                        <li><a href="https://imgbb.com/"><img src="./asset/Group.png" alt="Social-icon-Twitter"></a>
-                        </li>
+
+            <div class="logo">
+                <div class="main-logo"><a href="#"><img src="./asset/Frame 5 (1).png"></a></div>
+                <h1>Paymable</h1>
+            </div>
+            <div id="callout">
+                <ul id="social">
+                    <li><a href="https://imgbb.com/"><img src="./asset/Social icon - Twitter.png"
+                                alt="Social-icon-Twitter"></a> </li>
+                    <li><a href="https://imgbb.com/"><img src="./asset/Social icon - FB.png"
+                                alt="Social-icon-Twitter"></a> </li>
+                    <li><a href="https://imgbb.com/"><img src="./asset/Group.png" alt="Social-icon-Twitter"></a>
+                    </li>
 
 
 
-                    </ul>
-                </div>
+                </ul>
             </div>
 
         </header>
@@ -343,13 +351,13 @@
                 <div class="app-store">
                     <div class="img">
                         <a href=""><img class="app-store-img" src="./asset/google-play-badge.png" alt="playstore"
-                                border="0" height="36px" max-width="6.6875rem"></a>
+                                border="0"></a>
 
                     </div>
 
                     <div class="img">
                         <a href="https://imgbb.com/"><img class="make" src="./asset/app-store.png" alt="app-store"
-                                border="0" height="36px" max-width="6.6875rem"></a>
+                                border="0"></a>
                     </div>
 
                 </div>
